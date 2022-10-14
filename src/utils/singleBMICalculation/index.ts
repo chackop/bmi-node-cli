@@ -7,7 +7,7 @@ const singleBMICalculation = async () => {
   const { height } = await inquirer.prompt({
     name: "height",
     type: "number",
-    message: "Please enter a height value in meters\n",
+    message: "Please enter a height value in centimeters\n",
   });
 
   const { weight } = await inquirer.prompt({

@@ -2,24 +2,16 @@ import calculateBMI from ".";
 
 describe("calculateBMI", () => {
   it.each`
-    heightInMeters | weightInKilos | calcBMIResult
-    ${1.71}        | ${96}         | ${1.78}
-    ${1.61}        | ${85}         | ${1.89}
-    ${1.8}         | ${77}         | ${0.23}
-    ${1.5}         | ${62}         | ${0.24}
-    ${1.67}        | ${82}         | ${0.2}
+    heightInCM | weightInKilos | calcBMIResult
+    ${171}     | ${96}         | ${1.78}
+    ${161}     | ${85}         | ${1.89}
+    ${180}     | ${77}         | ${0.23}
+    ${150}     | ${62}         | ${0.24}
+    ${167}     | ${82}         | ${0.2}
   `(
-    "calculates BMI value: $calcBMIResult based on supplied height: $heightInMeters and weight: $weightInKilos ",
-    ({
-      heightInMeters,
-      weightInKilos,
-      calcBMIResult,
-    }: {
-      heightInMeters: number;
-      weightInKilos: number;
-      calcBMIResult: number;
-    }) => {
-      expect(calculateBMI(heightInMeters, weightInKilos)).toStrictEqual(
+    "calculates BMI value: $calcBMIResult based on supplied height: $heightInCM and weight: $weightInKilos ",
+    ({ heightInCM, weightInKilos, calcBMIResult }) => {
+      expect(calculateBMI(heightInCM, weightInKilos)).toStrictEqual(
         calcBMIResult
       );
     }

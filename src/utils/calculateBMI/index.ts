@@ -1,5 +1,5 @@
 const calculateBMI = (height: number, weight: number): number => {
-  return height / weight;
+  return height / 100 / (weight ^ 2);
 };
 
 export default calculateBMI;

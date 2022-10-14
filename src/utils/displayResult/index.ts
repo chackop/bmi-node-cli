@@ -6,7 +6,7 @@ const displayResult = (
   BMIValue: number,
   category: BMICategory
 ) => {
-  console.log(`Your entered height in meters is ${height}`);
+  console.log(`Your entered height in centimeters is ${height}`);
   console.log(`Your entered weight in kg is ${weight}`);
   console.log(`Your BMI in kg/m2 is ${BMIValue}`);
   console.log(`Your BMI Category is ${category}`);
