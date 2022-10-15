@@ -1,4 +1,4 @@
-import { BMICategory, categoryRiskMap, HealthRisk } from "../../types";
+import { BMICategory, categoryRiskMap } from "../../types";
 
 const displayResult = (
   height: number,
