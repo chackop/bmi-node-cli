@@ -1,12 +1,10 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const inquirer_1 = __importDefault(require("inquirer"));
-const calculateBMI_1 = __importDefault(require("../calculateBMI"));
-const calculateCategoryRisk_1 = __importDefault(require("../calculateCategoryRisk"));
-const displayResult_1 = __importDefault(require("../displayResult"));
+const tslib_1 = require("tslib");
+const inquirer_1 = tslib_1.__importDefault(require("inquirer"));
+const calculateBMI_1 = tslib_1.__importDefault(require("../calculateBMI"));
+const calculateCategoryRisk_1 = tslib_1.__importDefault(require("../calculateCategoryRisk"));
+const displayResult_1 = tslib_1.__importDefault(require("../displayResult"));
 const singleBMICalculation = async () => {
     const { height } = await inquirer_1.default.prompt({
         name: "height",
