@@ -1,12 +1,11 @@
 {
   "name": "bmi-node-cli",
   "version": "1.0.0",
-  "description": "",
+  "description": "CLI App to calculate BMI",
   "main": "./build/index.js",
   "bin": {
-    "bmi": "./bin/index.js"
+    "bmi": "./bin/bmi"
   },
-  "type": "module",
   "scripts": {
     "start": "npm run build && npm run global",
     "test": "npm run lint && npm run test:unit",
