@@ -1,4 +1,4 @@
-import { BMICategory, categoryRiskMap } from "../../types";
+import { BMICategory } from "../../types";
 
 const calculateCategoryRisk = (BMIValue: number): BMICategory => {
   if (BMIValue >= 40) {
